@@ -6,7 +6,7 @@
 
 Fork and clone this repository.
 
-Edit quiz.rb and complete each question.
+Edit quiz.rb and complete each question.  You may use any resource, other than someone else in the classroom, to help you complete the quiz.
 
 Commit and push your changes.
 
