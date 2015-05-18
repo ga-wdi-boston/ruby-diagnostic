@@ -44,7 +44,7 @@ end
 # the return of fizz_buzz
 # define a method called fizz_buzz, which takes one argument, num
 # it should return "fizz" if num is evenly divisible by 3
-# "buzz" if evenly divisible by 5
+# "buzz" if num is evenly divisible by 5
 # and "fizz buzz" if the number is evenly divisible by both 3 and 5
 # note the space in "fizz buzz"
 
