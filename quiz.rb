@@ -59,3 +59,19 @@ end
 # your code start here
 
 
+# BONUS QUESTION (optional)
+# If you got the prior ones done, give this one a try.
+# its a little bit harder, and isn't part of the core assessment
+#
+# This function should take two arguments that are either integers 2..10,
+# or strings 'j', 'q', 'k', 'a' representing playing cards
+# The function returns true if the sum of the values of the cards if 21,
+# and false if it is any other number.
+# The value of the 'j', 'q', 'k' is 10.
+# The value of 'a' is 1 or 11, depending on what is more advantagous
+# For example:
+# blackjack?(10, 'a') => true
+# blackjack?(5, 4) => false
+def blackjack?(card_one, card_two)
+  # your code goes here
+end

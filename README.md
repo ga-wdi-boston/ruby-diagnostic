@@ -2,6 +2,8 @@
 
 # Quiz:  Ruby Programming Fundamentals
 
+You have 30 minutes.
+
 ## Instructions
 
 Fork and clone this repository.
