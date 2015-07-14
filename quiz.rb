@@ -1,61 +1,72 @@
-# Quiz: Ruby Fundamentals
+# Assessment :: Ruby Basics
 
 
-# question 1
-# complete the method is_of_age?
-# it should accept strings or numbers in its arguments
-# it should return false if age is less than minimum_age
+# Question 1
+# Complete the method `is_of_age?`. It should accept either strings or numbers in its arguments,
+# and should return either `true` or `false` based on whether `age` is less than `minimum_age`.
 
 def is_of_age? age, minimum_age
-  # your code goes here
-end
-
-# question 2
-# complete the method okay_to_drink, which should invoke is_of_age? from question 1
-# this question will receive feedback independent of your answer to question 1
-# the method should return "I'm sorry, <age> isn't old enough to drink.  The minimum age is <drinking_age>." if the call to is_of_age? returns false
-# replace <age> and <drinking_age> with the value of the corresponding argument
-# otherwise, it should return "Come on in."
-# Remember p, print, puts don't return their arguments
-
-def okay_to_drink age, drinking_age
-  # your code goes here
+  # Replace this comment with your code.
 end
 
 
-# question 3
-# complete the method ac_needed
-# it takes as arguments the current temperature, if the A/C is functional,
-# and what temperature is wanted
-# If the air conditioner is functional and the current temperature is above
-# the desired temperature the method should return "Turn on the A/C Please"
-# If the air conditioner is non-functional and the current temperature is
-# above the the desired temperature the method should return
-# "Fix the A/C now! It's hot!"
-# If the air conditioner is non-functional and the current temperature is
-# below the desired temperature the method should return
-# "Fix the A/C whenever you have the chance. It's cool."
-def ac_needed current_temp, ac_working, desired_temp
-  # your code goes here
+# Question 2
+# Complete the method `okay_to_drink?`, which should invoke `is_of_age?` from question one.
+# The method should return the following string if `is_of_age?` returns `true`:
+#   "Come on in."
+# However, if `is_of_age?` returns `false`, `okay_to_drink?` should return this string instead:
+#   "I'm sorry, <age> isn't old enough to drink. The minimum age is <drinking_age>."
+# <age> and <drinking_age> should be replaced with their corresponding values.
+
+# This question will be graded independently of question one.
+# Remember: `p`, `print`, and `puts` don't return their arguments.
+
+def okay_to_drink? age, drinking_age
+  # Replace this comment with your code.
 end
 
 
-# question 4
-# the return of fizz_buzz
-# define a method called fizz_buzz, which takes one argument, num
-# it should return "fizz" if num is evenly divisible by 3
-# "buzz" if num is evenly divisible by 5
-# and "fizz buzz" if the number is evenly divisible by both 3 and 5
-# note the space in "fizz buzz"
+# Question 3
+# Complete the method `ac_monitor`
+# Its arguments are:
+#  - `current_temp`, the current temperature
+#  - `ac_working`, a boolean that indicates if the air conditioner is functioning
+#  - `desired_temp`, the temperature that the user wants the room to be
+#
+# If the air conditioner is working and it's too hot in the room (current temperature is above
+# desired temperature) `ac_monitor` should return
+#   "Turn on the AC."
+# If the AC is working, and it's not too hot, it should return
+#   "Just right!"
+#
+# If the AC isn't working and it's too hot, `ac_monitor` should return
+#   "Fix the AC now! It's hot!"
+# If the AC is non-functional and it's NOT too hot, `ac_monitor` should return
+#   "Fix the AC whenever you have the chance. It's cool."
 
-# your code starts here
+def ac_monitor current_temp, ac_working, desired_temp
+  # Replace this comment with your code.
+end
 
 
-# Question 5
-# add calls to your function to check what they return
-# then run this script to see how they're they're working
-# using puts, etc is expected in this question
+# Question 4 : "The FizzBuzz Strikes Back"
+# Define a method called `fizz_buzz_calculator`, which takes one argument, `num`.
+# `fizz_buzz_calculator` should:
+# - return "fizz" if `num` is evenly divisible by 3
+# - return "buzz" if `num` is evenly divisible by 5
+# - return "fizzbuzz" if `num` is evenly divisible by both 3 and 5
+# - return the value of `num` if `num` isn't divisible by either 3 or 5
 
-# your code start here
+# Replace this comment with your code.
+
+
+# Question 5 : "Return of the FizzBuzz"
+# Let's create a new method called `fizz_buzz` that uses `fizz_buzz_calculator`.
+# `fizz_buzz` should take two arguments, `min`, and `max`.
+# When called, `fizz_buzz` should go through every number from `min` to `max`
+# and print out the result of `fizz_buzz_calculator` for that number.
+# This question will be graded independently of question four.
+
+# Replace this comment with your code.
 
 
