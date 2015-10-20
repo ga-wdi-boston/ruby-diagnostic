@@ -9,7 +9,7 @@
 65.89
 
 # Question 2: Booleans
-# What would the be the result of executing the below statements
+# What would be the result of executing the below statements
 
 if 33 && 55
   puts "it's true"
@@ -17,9 +17,9 @@ else
   puts "it's false"
 end
 
-# 2.1 Substitue "hello" && 4.5 for 33 && 55 above.
-# 2.2 Substitue nil && 88 for 33 && 55 above.
-# 2.4 Substitue 63.4 < 64
+# 2.1 Substitue "hello" && 4.5 for 33 && 55 above. What's the output?
+# 2.2 Substitue nil && 88 for 33 && 55 above. What's the output?
+# 2.4 Substitue 63.4 < 64. What's the output?
 
 # Question 3 :Strings
 
@@ -27,7 +27,7 @@ end
 
 # 3.1. determine if a string included another another string?
 # 3.2. determine if the length of a string?
-# 3.3. changes the string "eels in my hovercraft" to "fish in my sink"
+# 3.3. changes the string "eels in my hovercraft" to be "fish in my sink"
 #
 
 # Question 4 : Variables
@@ -37,10 +37,20 @@ vehicle = "4 wheel Bus"
 
 # 4.1 to "6 wheel Bus"
 # 4.2 to "6 wheel tank"
-# 4.3 Create a new string from the string in 42 that have the value
-# "6 wheel tank that shoots flowers"
+# 4.3 Create a NEW string from the string in 4.2 that will be
+# "6 wheel tank that shoots rainbow bunnnies"
 
 # Question 5 : Loop
-# write a loop that guess your age.
-# Only allow 4 guesses
-# Notify the user if they guess correctly OR if they run out of turns to guess
+# - write a loop that guesses your age.
+# - Only allow 4 guesses
+# - Notify the user if they guess correctly OR if they run out of turns to guess
+# - Get mad and curse the fingers that thought you where that old,
+# - aaaah maaan c'mon, huh, WTF
+# - I'm not kidding, say unkind works to a user that thinks your 10 years older
+#   than you are.
+
+# Bonus Question: Who said this?
+
+# The great enemy of the truth is very often not the lie -- deliberate, contrived
+# and dishonest, but the myth, persistent, persuasive, and unrealistic.
+# Belief in myths allows the comfort of opinion without the discomfort of thought.
