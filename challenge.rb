@@ -1,7 +1,7 @@
 # Assessment :: Ruby Basics
 
 
-# Question 1 : Ruby objects and classes.
+# Question 1: Ruby objects and classes.
 # How would one find the class of the below objects.
 
 "Hello World"
@@ -25,13 +25,15 @@ end
 
 # How would you (Yes, you can look up the String methods!):
 
-# 3.1. determine if a string included another another string?
+# 3.1. determine if a string is included another another string?
 # 3.2. determine if the length of a string?
-# 3.3. changes the string "eels in my hovercraft" to be "fish in my sink"
-#
+# 3.3. Go from the string "eels in my hovercraft" to "fish in my sink" but don't
+# change the string "eels in my hovercraft"
+
 
 # Question 4 : Variables
-# Change the below string, don't make copies of the string.
+# Change the below string, do NOT make copies of the string. All changes
+# to the string should be made in-place. (Unless told otherwise, like in 4.3.)
 
 vehicle = "4 wheel Bus"
 
