@@ -30,7 +30,7 @@ This includes referencing talk materials, appropriate documentation, and
 searching for help online.
 
 Pay attention to your linter and fix any syntax errors as they occur. You should
-run `rspec spec` to run the included tests. Tests will tell you whether of not
+run `rspec spec` to run the included tests. Tests will tell you whether or not
 your responses are correct.
 
 ## [License](LICENSE)
