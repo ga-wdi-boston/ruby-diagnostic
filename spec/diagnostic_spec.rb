@@ -114,4 +114,16 @@ RSpec.describe "Diagnostic" do
       expect(subject.returns).to equal(false)
     end
   end
+
+  describe '.remove_from_array' do
+    it 'removes the last two elements from an array' do
+      expect(subject.remove_from_array).to eql('arr.pop 2')
+    end
+  end
+
+  describe '.array_add_to' do
+    it 'returns a naturally grown array based on index assignment' do
+      expect(subject.array_add_to).to eql('[12, 34, 56, 67, nil, nil, 99]')
+    end
+  end
 end

@@ -108,3 +108,19 @@ Diagnostic.array_iteration = :example
 # replace nil.
 
 Diagnostic.returns = nil
+
+# Ruby Arrays
+#
+# Given the following array:
+
+arr = [12, 34, 56, 67]
+
+# In a Ruby string, write how you would remove the last two elements from this array
+
+Diagnostic.remove_from_array = 'your answer here'
+
+# What would `arr` equal after:
+arr[arr.length + 2] = 99
+# Write your response as a ruby string
+
+Diagnostic.array_add_to = 'your answer here'
