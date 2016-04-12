@@ -28,12 +28,6 @@ RSpec.describe "Diagnostic" do
     end
   end
 
-  describe '.defined_method' do
-    it 'returns a number' do
-      expect([Float, Fixnum]).to include(subject.defined_method.class)
-    end
-  end
-
   describe '.predicate' do
     it 'returns a boolean' do
       expect([true, false]).to include(subject.predicate)
@@ -94,21 +88,6 @@ RSpec.describe "Diagnostic" do
     end
   end
 
-  describe '.array_iteration' do
-    it 'returns the symbol' do
-      expect(subject.array_iteration).to be_a(Symbol)
-    end
-
-    it 'represents an iteration method available on Array' do
-      iteration_methods = [
-        :map,
-        :each
-      ]
-
-      expect(iteration_methods).to include(subject.array_iteration)
-    end
-  end
-
   describe '.returns' do
     it 'returns a value which desribes whether returns are explicit' do
       expect(subject.returns).to equal(false)
@@ -124,6 +103,19 @@ RSpec.describe "Diagnostic" do
   describe '.array_add_to' do
     it 'returns a naturally grown array based on index assignment' do
       expect(subject.array_add_to).to eql('[12, 34, 56, 67, nil, nil, 99]')
+    end
+  end
+
+  describe '.person_hash' do
+    it 'creates an hash with shorthand containing :age and :first_name symbols' do
+      expect(subject.person_hash).to include('person = {first_name:').or include('person = {age:')
+      .and include('first_name:').or include('age:')
+    end
+  end
+
+  describe '.hash_default' do
+    it 'assigns a string default to the hash' do
+      expect(subject.hash_default).to include('person.default = "#{person[:first_name]}')
     end
   end
 end
