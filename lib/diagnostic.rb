@@ -76,7 +76,7 @@ else
   'Just your average billionaire'
 end
 
-# Predict what value will be returned. Write your response as a Ruby string.
+# What value will be returned. Write your response as a Ruby string.
 
 Diagnostic.flow_control = 'your response here'
 
@@ -102,7 +102,7 @@ arr = [12, 34, 56, 67]
 
 Diagnostic.remove_from_array = 'your answer here'
 
-# What would `arr` equal after:
+# Taking the result from the question above, what would `arr` now equal:
 arr[arr.length + 2] = 99
 # Write your response as a ruby string
 
