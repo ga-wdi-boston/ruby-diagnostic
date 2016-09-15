@@ -29,7 +29,7 @@ Diagnostic.variable = 'your response here'
 
 character = 'Jar Jar Binks'
 
-Diagnostic.interpolation = "ANSWER is really a Sith Lord."
+Diagnostic.interpolation = 'ANSWER is really a Sith Lord.'
 
 # Define a predicate method in Ruby
 #
