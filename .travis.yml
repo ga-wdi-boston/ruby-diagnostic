@@ -1,0 +1,10 @@
+language: ruby
+before_script: # before running scripts
+- 'bundle install'
+script: # run these scripts
+- 'rspec spec'
+notifications: # set notification options
+  email: false
+branches:
+  only:
+    - response
