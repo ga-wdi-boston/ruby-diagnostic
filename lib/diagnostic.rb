@@ -31,15 +31,6 @@ character = 'Jar Jar Binks'
 
 Diagnostic.interpolation = "#{character} is really a Sith Lord."
 
-# Define a predicate method in Ruby
-#
-# Define a method that checks whether a number passed in is odd. Name it
-# conventionally.
-
-# define your method here
-
-Diagnostic.predicate = 'is_odd?(3)'
-
 # Numbers in Ruby
 #
 # What is the type of object in Ruby for decimal numbers? Write your answer in
@@ -55,7 +46,7 @@ Diagnostic.integer = 'Fixnum'
 # Write an example of a decimal and an integer in Ruby. Replace the Ruby strings
 # in the following array with your examples.
 
-Diagnostic.numbers = "[3.14, 1]"
+Diagnostic.numbers = [3.14, 1]
 
 # Falsiness in Ruby
 #
@@ -115,7 +106,7 @@ Diagnostic.array_add_to = '[12, 34, 56, 67, nil, nil, 99]'
 # Use shorthand to make this one line long.
 # Write your response as a Ruby string.
 
-Diagnostic.person_hash = "person = {first_name: \"Ben\", age: 28}"
+Diagnostic.person_hash = 'person = {first_name: \'Ben\', age: 28}'
 
 # Set a default return value to your `person` hash that concatenates the value
 # of person[:first_name] and a message about them.

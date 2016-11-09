@@ -1,6 +1,8 @@
+# rubocop:disable BlockLength
+
 require_relative '../lib/diagnostic.rb'
 
-RSpec.describe "Diagnostic" do
+RSpec.describe 'Diagnostic' do
   subject(:diagnostic) { Diagnostic }
 
   describe '.script' do
@@ -25,12 +27,6 @@ RSpec.describe "Diagnostic" do
     it 'returns a sentence' do
       expect(subject.interpolation)
         .to eql('Jar Jar Binks is really a Sith Lord.')
-    end
-  end
-
-  describe '.predicate' do
-    it 'returns a boolean' do
-      expect([true, false]).to include(subject.predicate)
     end
   end
 
@@ -68,7 +64,7 @@ RSpec.describe "Diagnostic" do
 
     it 'contains all values which evaluate to false' do
       responses = [
-        subject.falsy.any? { |e| e == nil },
+        subject.falsy.any?(& :nil?),
         subject.falsy.any? { |e| e == false }
       ]
 
@@ -107,15 +103,18 @@ RSpec.describe "Diagnostic" do
   end
 
   describe '.person_hash' do
-    it 'creates an hash with shorthand containing :age and :first_name symbols' do
-      expect(subject.person_hash).to include('person = {first_name:').or include('person = {age:')
-      .and include('first_name:').or include('age:')
+    it 'creates an hash with shorthand
+    containing :age and :first_name symbols' do
+      expect(subject.person_hash).to include('person = {first_name:')
+        .or include('person = {age:')
+        .and include('first_name:').or include('age:')
     end
   end
 
   describe '.hash_default' do
     it 'assigns a string default to the hash' do
-      expect(subject.hash_default).to include('person.default = "#{person[:first_name]}')
+      expect(subject.hash_default)
+        .to include('person.default = "#{person[:first_name]}')
     end
   end
 end
