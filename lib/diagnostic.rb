@@ -31,13 +31,6 @@ character = 'Jar Jar Binks'
 
 Diagnostic.interpolation = 'ANSWER is really a Sith Lord.'
 
-# Define a predicate method in Ruby
-#
-# Define a method that checks whether a number passed in is odd. Name it
-# conventionally.
-
-# define your method here
-
 Diagnostic.decimal = 'your response here'
 
 # What is the type of object in Ruby for integer numbers? Write your answer in
