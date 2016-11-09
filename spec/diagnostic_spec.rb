@@ -28,12 +28,6 @@ RSpec.describe "Diagnostic" do
     end
   end
 
-  describe '.predicate' do
-    it 'returns a boolean' do
-      expect([true, false]).to include(subject.predicate)
-    end
-  end
-
   describe '.decimal' do
     it 'returns a string containing the correct number type' do
       expect(subject.decimal).to eql('Float')

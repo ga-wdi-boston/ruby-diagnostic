@@ -38,13 +38,6 @@ Diagnostic.interpolation = 'ANSWER is really a Sith Lord.'
 
 # define your method here
 
-Diagnostic.predicate = # call your method here
-
-# Numbers in Ruby
-#
-# What is the type of object in Ruby for decimal numbers? Write your answer in
-# a Ruby string.
-
 Diagnostic.decimal = 'your response here'
 
 # What is the type of object in Ruby for integer numbers? Write your answer in
