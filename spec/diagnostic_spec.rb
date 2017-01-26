@@ -101,9 +101,9 @@ RSpec.describe "Diagnostic" do
   end
 
   describe '.person_hash' do
-    it 'creates an hash with shorthand containing :age and :first_name symbols' do
-      expect(subject.person_hash).to include('person = {first_name:').or include('person = {age:')
-      .and include('first_name:').or include('age:')
+    it 'creates an hash with shorthand containing :lucky_number and :first_name symbols' do
+      expect(subject.person_hash).to include('person = {first_name:').or include('person = {lucky_number:')
+      .and include('first_name:').or include('lucky_number:')
     end
   end
 
