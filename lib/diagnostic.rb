@@ -46,7 +46,7 @@ Diagnostic.integer = 'Fixnum'
 # Write an example of a decimal and an integer in Ruby. Replace the Ruby strings
 # in the following array with your examples.
 
-Diagnostic.numbers = ['3.3', '3']
+Diagnostic.numbers = [3.3, 3]
 
 # Falsiness in Ruby
 #
