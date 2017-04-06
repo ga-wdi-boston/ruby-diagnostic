@@ -99,6 +99,7 @@ RSpec.describe 'Diagnostic' do
   describe '.array_add_to' do
     it 'returns a naturally grown array based on index assignment' do
       expect(subject.array_add_to).to eql('[12, 34, 56, 67, nil, nil, 99]')
+        .or eql('[12, 34, nil, nil, 99]')
     end
   end
 
