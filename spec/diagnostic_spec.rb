@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require_relative '../lib/diagnostic.rb'
 
-RSpec.describe "Diagnostic" do
+RSpec.describe 'Diagnostic' do
   subject(:diagnostic) { Diagnostic }
 
   describe '.script' do
@@ -62,7 +64,7 @@ RSpec.describe "Diagnostic" do
 
     it 'contains all values which evaluate to false' do
       responses = [
-        subject.falsy.any? { |e| e == nil },
+        subject.falsy.any?(&:nil?),
         subject.falsy.any? { |e| e == false }
       ]
 
@@ -97,19 +99,22 @@ RSpec.describe "Diagnostic" do
   describe '.array_add_to' do
     it 'returns a naturally grown array based on index assignment' do
       expect(subject.array_add_to).to eql('[12, 34, 56, 67, nil, nil, 99]')
+        .or eql('[12, 34, nil, nil, 99]')
     end
   end
 
   describe '.person_hash' do
-    it 'creates an hash with shorthand containing :age and :first_name symbols' do
-      expect(subject.person_hash).to include('person = {first_name:').or include('person = {age:')
-      .and include('first_name:').or include('age:')
+    it 'creates hash containing :favorite_number and :first_name symbols' do
+      expect(subject.person_hash).to include('person = {first_name:')
+        .or include('person = {favorite_number:')
+        .and include('first_name:').or include('favorite_number:')
     end
   end
 
   describe '.hash_default' do
     it 'assigns a string default to the hash' do
-      expect(subject.hash_default).to include('person.default = "#{person[:first_name]}')
+      expect(subject.hash_default)
+        .to include('person.default = "#{person[:first_name]}')
     end
   end
 end

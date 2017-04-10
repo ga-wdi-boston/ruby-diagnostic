@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'ostruct'
 Diagnostic = OpenStruct.new
 
@@ -101,8 +103,8 @@ Diagnostic.array_add_to = 'your answer here'
 
 # Ruby Hashes
 #
-# Instantiate a `person` hash with `age` and `first_name` as symbols and
-# a number age and a first name as their respective values.
+# Instantiate a `person` hash with `favorite_number` and `first_name` as symbols
+# and a favorite number and a first name as their respective values.
 # Use shorthand to make this one line long.
 # Write your response as a Ruby string.
 
